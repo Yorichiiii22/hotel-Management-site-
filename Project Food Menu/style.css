@@ -640,3 +640,26 @@ body {
     height: 50vmax;
   }
 }
+@keyframes appear {
+  from {
+    opacity: 0;
+    clip-path: inset(100% 100% 0 0);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.block {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.logo{
+  font-size: 3rem;
+  font-family: 'Poppins', sans-serif;
+  color: #353047;
+  font-weight: bolder;
+  text-decoration: none;
+}
