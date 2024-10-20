@@ -199,6 +199,12 @@ body {
 #food {
   padding: 5rem 0 10rem 0;
 }
+.heading2{
+  margin-left: 170px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
 
 #food h2 {
   text-align: center;
@@ -207,6 +213,8 @@ body {
   margin-bottom: 40px;
   text-transform: uppercase;
   color: #555;
+  margin: 10px;
+  padding: 10px;
 }
 
 .food-container {
