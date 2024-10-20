@@ -11,6 +11,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -30,7 +33,8 @@
               <li><a href="#testimonials">Testimonial</a></li>
               <li><a href="#contact">Contact</a></li>
           </ul>
-          <h1 class="logo">RETRO</h1>
+          <!-- <h1 class="logo">RETRO</h1> -->
+          <a href="#" class="logo" id=""><span id="newlogo"></span></a>
       </div>
   </nav>
     <section class="showcase-area" id="showcase">
@@ -41,8 +45,8 @@
       </div>
     </section>
 
-    <section id="about">
-      <div class="about-wrapper container">
+    <section id="about block">
+      <div class="about-wrapper container block">
         <div class="about-text">
           <p class="small">About Us</p>
           <h2>We've beem making healthy food last for 10 years</h2>
@@ -59,7 +63,7 @@
         </div>
       </div>
     </section>
-    <section id="food">
+    <section id="food " class="block">
       <h2>Types of food</h2>
       <div class="food-container container">
         <div class="food-type fruite">
@@ -90,7 +94,7 @@
             </div>
           </div>
         </div>
-        <div class="food-type grin">
+        <div class="food-type grin block">
           <div class="img-container">
             <img src="https://i.postimg.cc/76ZwsPsd/food3.jpg" alt="error" />
             <div class="img-content">
@@ -106,7 +110,7 @@
         </div>
       </div>
     </section>
-    <section id="food-menu">
+    <section id="food-menu" class="block">
       <h2 class="food-menu-heading">Food Menu</h2>
       <div class="food-menu-container container">
         <div class="food-menu-item">
@@ -193,7 +197,7 @@
         </div>
       </div>
     </section>
-    <section id="testimonials">
+    <section id="testimonials" class="block">
       <h2 class="testimonial-title">What Our Customers Say</h2>
       <div class="testimonial-container container">
         <div class="testimonial-box">
@@ -261,7 +265,7 @@
         </div>
       </div>
     </section>
-    <section id="contact">
+    <section id="contact" class="block">
       <div class="contact-container container">
         <div class="contact-img">
           <img src="https://i.postimg.cc/1XvYM67V/restraunt2.jpg" alt="" />
@@ -284,6 +288,21 @@
       <h2>Restraunt &copy; all rights reserved</h2>
     </footer>
   </body>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+
+      var typed = new Typed('#newlogo', {
+
+          strings: ['Restro.',"Taste unique"],
+          loop: true,
+          typeSpeed: 80,
+          backSpeed: 25, // Speed for backspacing
+          backDelay: 1000, // Delay before starting to backspace
+          startDelay: 500 // Optional: Delay before starting the typing effect
+      });
+
+  </script>
   <!-- 
     .................../ JS Code for smooth scrolling /...................... -->
 
