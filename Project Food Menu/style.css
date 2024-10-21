@@ -232,9 +232,8 @@ body {
 }
 
 .img-container {
-  margin: 0 0rem;
+  margin: 0 1rem;
   position: relative;
-  display: flex;
 }
 
 .img-content {
@@ -246,7 +245,6 @@ body {
   z-index: 2;
   text-align: center;
   transition: all 0.3s ease-in-out 0.1s;
-
 }
 
 .img-content h3 {
