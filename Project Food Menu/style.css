@@ -232,8 +232,9 @@ body {
 }
 
 .img-container {
-  margin: 0 1rem;
+  margin: 0 0rem;
   position: relative;
+  display: flex;
 }
 
 .img-content {
@@ -245,6 +246,7 @@ body {
   z-index: 2;
   text-align: center;
   transition: all 0.3s ease-in-out 0.1s;
+
 }
 
 .img-content h3 {
@@ -670,4 +672,111 @@ body {
   color: #353047;
   font-weight: bolder;
   text-decoration: none;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #232323;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-column p {
+  color: white;
+}
+
+.footer-column a {
+  font-size: 16px;
+  line-height: 2;
+}
+#footer-contact-us {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #f39c12;
+}
+
+.footer-column p,
+.footer-column ul {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #f39c12;
+  text-decoration: underline;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #ffffff;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #f39c12;
+}
+
+.footer-bottom {
+  font-size: 14px;
+}
+.footer-bottom .copyright-b{
+  color: #fffcfc;
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+}
+
+/* for discord */
+.social-icons .fa-discord {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.social-icons .fa-discord:hover {
+  color: #4267b2;
+  transform: scale(1.1);
+  transform: scale(1.2) translateY(-5px);
+}
+.social-icons .fa-github:hover {
+  color: #c32aa3;
+  transform: scale(1.1);
+  transform: scale(1.2) translateY(-5px);
+}
+.social-icons .fa-linkedin-in {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.social-icons .fa-linkedin-in:hover {
+  color: #0a66c2;
+  transform: scale(1.1);
+  transform: scale(1.2) translateY(-5px);
 }
