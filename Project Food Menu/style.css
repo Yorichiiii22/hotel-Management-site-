@@ -126,12 +126,8 @@ body {
   font-size: 1.6rem;
 }
 
-.main-title {
-  text-transform: uppercase;
-  margin-top: 1.5em;
-}
 
-/* ......//about us//...... */
+
 
 #about {
   padding: 50px 0;
@@ -336,24 +332,31 @@ body {
 }
 
 /* ........./ Testimonial /.......... */
-
 #testimonials {
+  background: var(--background-color);
+  color: var(--text-color);
   padding: 5rem 0;
-  background: rgba(243, 243, 243);
+  transition: background-color var(--transition-speed), color var(--transition-speed);
 }
+
 
 .testimonial-title {
   text-align: center;
   font-size: 2.8rem;
   font-weight: 400;
-  color: #555;
+  color: var(--text-color);
+
 }
 
 .testimonial-container {
+  background-color: var(--background-color);
+  color: var(--text-color);
   display: flex;
   justify-content: space-between;
   font-size: 1.4rem;
   padding: 1rem;
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+
 }
 
 .testimonial-box .checked {
@@ -362,7 +365,7 @@ body {
 
 .testimonial-box .testimonial-text {
   margin: 1rem 0;
-  color: #444;
+  color: var(--text-color);
 }
 
 .testimonial-box {
@@ -381,15 +384,17 @@ body {
 }
 
 /* ........ Contact Us........... */
-
 #contact {
+  background: var(--background-color);
+  color: var(--text-color);
   padding: 5rem 0;
-  background: rgb(226, 226, 226);
+  transition: background-color var(--transition-speed), color var(--transition-speed);
 }
+
 
 .contact-container {
   display: flex;
-  background: #fff;
+  background: var(--background-color);
 }
 
 .contact-img {
@@ -408,6 +413,9 @@ body {
   padding: 1rem;
   width: 50%;
   margin: auto;
+  background: var(--background-color);
+  color: var(--text-color);
+
 }
 
 .form-container input {
@@ -777,4 +785,268 @@ footer {
   color: #0a66c2;
   transform: scale(1.1);
   transform: scale(1.2) translateY(-5px);
+}
+
+
+
+:root {
+  --primary-color: #16a083;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --footer-bg-color: #232323;
+  --footer-text-color: #ffffff;
+  --transition-speed: 0.15s;
+  --navbar-bg-color: #fff;
+  --navbar-text-color: #000;
+  --navbar-hover-color: #117964;
+  --title-color: #333333; 
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  --background-color: #1a1a1a;
+  --text-color: #f0f0f0;
+  --footer-bg-color: #0a0a0a;
+  --footer-text-color: #f0f0f0;
+  --navbar-bg-color: #333;
+  --navbar-text-color: #f0f0f0;
+  --navbar-hover-color: #16a083;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: var(--navbar-bg-color);
+  color: var(--navbar-text-color);
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+.menu-items a {
+  color: var(--navbar-text-color);
+}
+
+.menu-items a:hover {
+  color: var(--navbar-hover-color);
+}
+
+.logo {
+  color: var(--navbar-text-color);
+}
+
+/* Dark mode specific navbar adjustments */
+body.dark-mode .navbar {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .navbar-container .hamburger-lines .line {
+  background: var(--navbar-text-color);
+}
+
+/* Theme switch styles */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: var(--primary-color);
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Footer styles */
+.footer {
+  background-color: var(--footer-bg-color);
+  color: var(--footer-text-color);
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin: 1rem;
+}
+
+.footer-column h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-column a {
+  color: var(--footer-text-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column a:hover {
+  color: var(--primary-color);
+}
+
+.social-icons a {
+  color: var(--footer-text-color);
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+.newsletter input[type="email"] {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: var(--footer-text-color);
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.newsletter button {
+  background-color: var(--primary-color);
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+  background-color: #128065;
+}
+
+.footer-bottom {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/* Dark mode UI effects */
+body.dark-mode .footer {
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .footer-column h3 {
+  text-shadow: 0 0 5px rgba(22, 160, 131, 0.5);
+}
+
+body.dark-mode .social-icons a:hover {
+  text-shadow: 0 0 10px rgba(22, 160, 131, 0.8);
+}
+
+body.dark-mode .newsletter input[type="email"] {
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .newsletter button {
+  box-shadow: 0 0 10px rgba(22, 160, 131, 0.5);
+}
+
+/* Smooth transition for all elements */
+* {
+  transition: background-color var(--transition-speed), color var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+/* Dark mode specific adjustments */
+body.dark-mode #testimonials,
+body.dark-mode #contact {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .testimonial-box {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .form-container input,
+body.dark-mode .form-container textarea {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .form-container input::placeholder,
+body.dark-mode .form-container textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Ensure smooth transition for all elements */
+*:not(.main-title){
+    transition: background-color var(--transition-speed), 
+                color var(--transition-speed), 
+                border-color var(--transition-speed), 
+                box-shadow var(--transition-speed);
+}
+
+.main-title {
+  text-transform: uppercase;
+  margin-top: 1.5em;
+}
+
+/* New addition to avoid color changes */
+.main-title{
+  color: #333; /* Set the fixed color you want */
+  transition: none; /* Prevent color transition with theme */
 }

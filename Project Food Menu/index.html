@@ -17,7 +17,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -38,12 +38,19 @@
           </ul>
           <!-- <h1 class="logo">RETRO</h1> -->
           <a href="#" class="logo" id=""><span id="newlogo"></span></a>
+          <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+            <em>Dark Mode</em>
+        </div>
       </div>
   </nav>
     <section class="showcase-area" id="showcase">
       <div class="showcase-container">
         <h1 class="main-title" id="home">Eat Right Food</h1>
-        <p>Eat Healty, it is good for our health.</p>
+        <p class="main-title">Eat Healty, it is good for our health.</p>
         <a href="#food-menu" class="btn btn-primary">Menu</a>
       </div>
     </section>
@@ -286,155 +293,46 @@
         </div>
       </div>
     </section>
-    <footer id="footer">
-      <div class="footer-container">
-        <!-- About Us Section -->
-        <div class="footer-column">
-          <h3>About Us</h3>
-          <p>Serving Plates of Happiness Since 1987</p>
-        </div>
-    
-        <!-- Quick Links Section -->
-        <div class="footer-column">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">FAQs</a></li>
-            <li><a href="#">Services</a></li>
-          </ul>
-        </div>
-         <!-- Contact Us Section -->
-    <div class="footer-column">
-      <h3>Contact Us</h3>
-      <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
-      <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
-    </div>
-
-    <!-- Follow Us Section -->
-    <div class="footer-column">
-      <h3>Follow Us</h3>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-discord"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    <footer class="footer">
+      <div class="footer-container container">
+          <div class="footer-column">
+              <h3>About Us</h3>
+              <p>Serving Plates of Happiness Since 1987</p>
+          </div>
+          <div class="footer-column">
+              <h3>Quick Links</h3>
+              <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">FAQs</a></li>
+                  <li><a href="#">Services</a></li>
+              </ul>
+          </div>
+          <div class="footer-column">
+              <h3>Contact Us</h3>
+              <p>Email: info@example.com</p>
+              <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
+          </div>
+          <div class="footer-column">
+              <h3>Follow Us</h3>
+              <div class="social-icons">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+          </div>
+          <div class="footer-column newsletter">
+              <h3>Subscribe to Our Newsletter</h3>
+              <form>
+                  <input type="email" placeholder="Enter your email">
+                  <button type="submit">Subscribe</button>
+              </form>
+          </div>
       </div>
-    </div>
-    <!-- Newsletter Form Section -->
-    <style>
-      .footer-column.newsletter {
-          max-width: 300px;
-          margin: 0 auto;
-          text-align: center;
-      }
-      #newsletter-form {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-      }
-      #email {
-          width: 100%;
-          margin-bottom: 10px;
-          padding: 8px;
-          box-sizing: border-box;
-      }
-      button[type="submit"] {
-          width: 100px;
-          padding: 6px;
-          font-size: 14px;
-      }
-      #subscription-message {
-          font-size: 14px;
-          margin-top: 10px;
-      }
-  </style>
-    <div class="footer-column newsletter" id="newsletter">
-      <h3>Subscribe to Our Newsletter</h3>
-      <form id="newsletter-form">
-        <input type="email" id="email" placeholder="Enter your email" required />
-        <button type="submit">Subscribe</button>
-      </form>
-      <p id="subscription-message"></p>
-    </div>
-  </div>
-   <!-- Footer Bottom Section -->
-   <div class="footer-bottom">
-    <p class="copyright-b">&copy; 2024 Restaurant. All rights reserved.</p>
-  </div>
-</footer>
+      <div class="footer-bottom">
+          <p>&copy; 2024 Restro. All rights reserved.</p>
+      </div>
+  </footer>
+  <script src="./script.js"></script>
 </body>
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  <script>
-
-      var typed = new Typed('#newlogo', {
-
-          strings: ['Restro.',"Taste unique"],
-          loop: true,
-          typeSpeed: 80,
-          backSpeed: 25, // Speed for backspacing
-          backDelay: 1000, // Delay before starting to backspace
-          startDelay: 500 // Optional: Delay before starting the typing effect
-      });
-
-  </script>
-  <!-- 
-    .................../ JS Code for smooth scrolling /...................... -->
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script> configObj = {
-    "buttonD": "M8 17.333h5.333v4C13.333 22.806 14.527 24 16 24c1.473 0 2.667-1.194 2.667-2.667v-4H24L16 8l-8 9.333z", "buttonT": "translate(-1088 -172) translate(832 140) translate(32 32) translate(224)",
-    "shadowSize": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
-    "roundnessSize": "999px",
-    "buttonDToBottom": "32px",
-    "buttonDToRight": "32px",
-    "selectedBackgroundColor": "#fffffff",
-    "selectedIconColor": "#0000000",
-    "buttonWidth": "56px",
-    "buttonHeight": "56px",
-    "svgWidth": "48px",
-    "svgHeight": "48px"
-  };
-function createButton(obj, pageSimulator) {
-    const body = document.querySelector("body");
-    backToTopButton = document.createElement("span");
-    backToTopButton.classList.add("softr-back-to-top-button");
-    backToTopButton.id = "softr-back-to-top-button";
-    pageSimulator ? pageSimulator.appendChild(backToTopButton) : body.appendChild(backToTopButton);
-    backToTopButton.style.width = obj.buttonWidth;
-    backToTopButton.style.height = obj.buttonHeight;
-    backToTopButton.style.marginRight = obj.buttonDToRight;
-    backToTopButton.style.marginBottom = obj.buttonDToBottom;
-    backToTopButton.style.borderRadius = obj.roundnessSize;
-    backToTopButton.style.boxShadow = obj.shadowSize;
-    backToTopButton.style.color = obj.selectedBackgroundColor;
-    backToTopButton.style.backgroundColor = obj.selectedBackgroundColor;
-    pageSimulator ? backToTopButton.style.position = "absolute" : backToTopButton.style.position = "fixed";
-    backToTopButton.style.outline = "none";
-    backToTopButton.style.bottom = "0px";
-    backToTopButton.style.right = "0px";
-    backToTopButton.style.cursor = "pointer";
-    backToTopButton.style.textAlign = "center";
-    backToTopButton.style.border = "solid 2px currentColor";
-    backToTopButton.innerHTML = '<svg class="back-to-top-button-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" > <g fill="none" fill-rule="evenodd"> <path d="M0 0H32V32H0z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> <path class="back-to-top-button-img" fill-rule="nonzero" d="M11.384 13.333h9.232c.638 0 .958.68.505 1.079l-4.613 4.07c-.28.246-.736.246-1.016 0l-4.613-4.07c-.453-.399-.133-1.079.505-1.079z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> </g> </svg>';
-    backToTopButtonSvg = document.querySelector(".back-to-top-button-svg");
-    backToTopButtonSvg.style.verticalAlign = "middle";
-    backToTopButtonSvg.style.margin = "auto";
-    backToTopButtonSvg.style.justifyContent = "center";
-    backToTopButtonSvg.style.width = obj.svgWidth;
-    backToTopButtonSvg.style.height = obj.svgHeight;
-    backToTopButton.appendChild(backToTopButtonSvg);
-    backToTopButtonImg = document.querySelector(".back-to-top-button-img");
-    backToTopButtonImg.style.fill = obj.selectedIconColor;
-    backToTopButtonSvg.appendChild(backToTopButtonImg);
-    backToTopButtonImg.setAttribute("d", obj.buttonD);
-    backToTopButtonImg.setAttribute("transform", obj.buttonT); if (!pageSimulator) {
-        backToTopButton.style.display = "none";
-        window.onscroll = function () {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) { backToTopButton.style.display = "block"; }
-            else { backToTopButton.style.display = "none"; }
-        };
-        backToTopButton.onclick = function () { document.body.scrollTop = 0; document.documentElement.scrollTop = 0; };
-    }
-}; document.addEventListener("DOMContentLoaded", function () { createButton(configObj, null); });</script>
-
   </html>
