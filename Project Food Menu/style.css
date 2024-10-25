@@ -707,7 +707,9 @@ footer {
   display: flex;
   flex-direction: column;
 }
-
+.footer-contact{
+  color: #be1414;
+}
 .footer-column h3 {
   margin-bottom: 5px;
   font-size: 18px;
