@@ -17,7 +17,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css" />
+    
   </head>
   <body>
     <nav class="navbar">
@@ -197,73 +201,105 @@
     </section>
     <section id="testimonials" class="block">
       <h2 class="testimonial-title">What Our Customers Say</h2>
-      <div class="testimonial-container container">
-        <div class="testimonial-box">
-          <div class="customer-detail">
-            <div class="customer-photo">
-              <img src="https://i.postimg.cc/5Nrw360Y/male-photo1.jpg" alt="" />
-              <p class="customer-name">Ross Lee</p>
-            </div>
-          </div>
-          <div class="star-rating">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-          </div>
-          <p class="testimonial-text">
-            This restaurant offers a delightful blend of flavors with exceptional service. 
-            The ambience is elegant and inviting, perfect for a relaxed meal. 
-            Highly recommended for food lovers!
+      <div class="testimonial-container container swiper">
+        <div class="slider-wrapper">
+          <div class="card-list swiper-wrapper">
+            <div class="testimonial-box card-item swiper-slide">
+              <div class="customer-detail">
+                <div class="customer-photo">
+                  <img src="https://i.postimg.cc/5Nrw360Y/male-photo1.jpg" alt="" />
+                  <p class="customer-name">Ross Lee</p>
+                </div>
+              </div>
+              <div class="star-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </div>
+              <p class="testimonial-text">
+                This restaurant offers a delightful blend of flavors with exceptional service. 
+                The ambience is elegant and inviting, perfect for a relaxed meal. 
+                Highly recommended for food lovers!
+                
+              </p>
             
-          </p>
-         
-        </div>
-        <div class="testimonial-box">
-          <div class="customer-detail">
-            <div class="customer-photo">
-              <img
-                src="https://i.postimg.cc/sxd2xCD2/female-photo1.jpg"
-                alt=""
-              />
-              <p class="customer-name">Amelia Watson</p>
             </div>
-          </div>
-          <div class="star-rating">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-          </div>
-          <p class="testimonial-text">
-            An exquisite dining experience awaits at this restaurant, where each dish showcases impeccable craftsmanship and bold flavors.
-            A must-visit destination for discerning food connoisseurs seeking culinary excellence.
+            <div class="testimonial-box card-item swiper-slide">
+              <div class="customer-detail">
+                <div class="customer-photo">
+                  <img
+                    src="https://i.postimg.cc/sxd2xCD2/female-photo1.jpg"
+                    alt=""
+                  />
+                  <p class="customer-name">Amelia Watson</p>
+                </div>
+              </div>
+              <div class="star-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </div>
+              <p class="testimonial-text card-item swiper-slide">
+                An exquisite dining experience awaits at this restaurant, where each dish showcases impeccable craftsmanship and bold flavors.
+                A must-visit destination for discerning food connoisseurs seeking culinary excellence.
+                
+              </p>
             
-          </p>
-         
-        </div>
-        <div class="testimonial-box">
-          <div class="customer-detail">
-            <div class="customer-photo">
-              <img src="https://i.postimg.cc/fy90qvkV/male-photo3.jpg" alt="" />
-              <p class="customer-name">Ben Roy</p>
             </div>
+            <div class="testimonial-box card-item swiper-slide">
+              <div class="customer-detail">
+                <div class="customer-photo">
+                  <img src="https://i.postimg.cc/fy90qvkV/male-photo3.jpg" alt="" />
+                  <p class="customer-name">Ben Roy</p>
+                </div>
+              </div>
+              <div class="star-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </div>
+              <p class="testimonial-text">
+                This restaurant boasts a vibrant, upscale ambience, perfect for hosting parties and gatherings. 
+                The spacious, stylish interiors and impeccable service ensure an unforgettable dining experience for all.
+                      
+              </p>
+            
+            </div>
+            <!--........../ New feedback added /..........-->
+            <div class="testimonial-box card-item swiper-slide">
+              <div class="customer-detail">
+                <div class="customer-photo">
+                  <img
+                    src="https://i.postimg.cc/k5z8YNc4/male-photo2.jpg"
+                    alt=""
+                  />
+                  <p class="customer-name">Ethan Bennett</p>
+                </div>
+              </div>
+              <div class="star-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </div>
+              <p class="testimonial-text card-item swiper-slide">
+                This restaurant is a hidden gem, offering a unique blend of traditional and modern flavors. 
+                The staff is friendly and attentive, making you feel welcomed from the moment you step in. 
+                Truly an unforgettable experience!
+              </p>
+            
+            </div>            
           </div>
-          <div class="star-rating">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-          </div>
-          <p class="testimonial-text">
-            This restaurant boasts a vibrant, upscale ambience, perfect for hosting parties and gatherings. 
-            The spacious, stylish interiors and impeccable service ensure an unforgettable dining experience for all.
-                  
-          </p>
-         
+          <div class="swiper-pagination"></div>
+          <div class="swiper-slide-button swiper-button-prev"></div>
+          <div class="swiper-slide-button swiper-button-next"></div>
         </div>
       </div>
     </section>
@@ -363,6 +399,7 @@
   </div>
 </footer>
 </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script>
 
@@ -436,5 +473,40 @@ function createButton(obj, pageSimulator) {
         backToTopButton.onclick = function () { document.body.scrollTop = 0; document.documentElement.scrollTop = 0; };
     }
 }; document.addEventListener("DOMContentLoaded", function () { createButton(configObj, null); });</script>
+  <!-- 
+    .................../ JS code to initialize SwiperJS, and card slider functional. /...................... -->
+
+  <script>
+    const swiper = new Swiper('.slider-wrapper', {
+    loop: true,
+    grabCursor: true,
+    spaceBetween: 30,
+  
+    // Pagination bullets
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // Responsive breakpoints
+    breakpoints: {
+      0: {
+        slidesPerView: 1
+      },
+      768: {
+        slidesPerView: 2
+      },
+      1024: {
+        slidesPerView: 3
+      }
+    }});
+  </script>
 
   </html>

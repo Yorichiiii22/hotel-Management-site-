@@ -380,6 +380,86 @@ body {
   margin: auto;
 }
 
+/*........../ slider for testimonial /..........*/
+
+.slider-wrapper {
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 70px 55px;
+}
+
+.card-list .card-item {
+  height: auto;
+  user-select: none;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(30px);
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.card-list .card-item .user-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+  border: 3px solid #fff;
+  padding: 4px;
+}
+
+.card-list .card-item {
+  font-size: 1.15rem;
+  margin: 14px 0 40px;
+}
+
+.card-list .card-item {
+  padding: 0px;
+  cursor: grab;
+  background: #fff;
+  border: 1px solid transparent;
+  transition: 0.2s ease;
+}
+
+.card-list .card-item {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.slider-wrapper .swiper-pagination-bullet {
+  background: black;
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+}
+
+.slider-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.slider-wrapper .swiper-slide-button {
+  margin-top: -55px;
+  transition: 0.2s ease;
+}
+
+.swiper-slide-button {
+  color: #686868;
+}
+
+.slider-wrapper .swiper-slide-button:hover {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .slider-wrapper {
+    margin: 0 10px 40px;
+  }
+
+  .slider-wrapper .swiper-slide-button {
+    display: none;
+  }
+}
+
+
 /* ........ Contact Us........... */
 
 #contact {
