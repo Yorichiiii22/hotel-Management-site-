@@ -335,6 +335,144 @@ body {
   font-weight: 700;
 }
 
+/*......./Subscriptions/........*/
+
+#subscriptions{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #ffffff;
+}
+.subscriptions-heading{
+  margin-top: 50px;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.subscriptions-para{
+  margin: 10px;
+  text-align: center;
+  font-size: 1rem;
+}
+.plans-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+  /* flex-wrap: wrap; */
+}
+.foods-img {
+  width: 200px; 
+  height: auto;
+  border-radius: 15px; 
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.foods-img:hover {
+  transform: scale(1.1); 
+}
+.plan {
+  background-color: #fff;
+  border-radius: 10px;
+  /* padding: 10px; */
+  height: 380px;
+  width: 700px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.plan:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.plan h3.basic {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 10px;
+  color: #444;
+}
+
+.plan h3.premium {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 10px;
+  color: #8f8f8f;
+}
+
+.plan h3.elite {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 10px;
+  color: #cfaa59;
+}
+
+.plan p {
+  font-size: 1.2rem;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+.plan ul {
+  list-style: none;
+  font-size: 1rem;
+  padding: 0;
+}
+
+.plan ul li {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .plans-container {
+    flex-direction: column; /* Stack plans vertically */
+    align-items: center;
+  }
+
+  .plan {
+    width: 80%;
+    margin: 15px 0;
+  }
+
+  .subscriptions-heading {
+    font-size: 1.8rem;
+  }
+
+  .subscriptions-para {
+    font-size: 0.9rem;
+  }
+
+  .plan h3 {
+    font-size: 1.5rem;
+  }
+
+  .plan p {
+    font-size: 1rem;
+  }
+
+  .plan ul li {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .subscriptions-heading {
+    font-size: 1.5rem;
+  }
+
+  .plan h3 {
+    font-size: 1.3rem;
+  }
+
+  .plan p {
+    font-size: 0.9rem;
+  }
+
+  .plan ul li {
+    font-size: 0.8rem;
+  }
+}
+
 /* ........./ Testimonial /.......... */
 
 #testimonials {
